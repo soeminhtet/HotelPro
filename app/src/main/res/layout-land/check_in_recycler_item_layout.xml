@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center"
+    android:weightSum="8">
+
+    <TextView
+        android:id="@+id/availableRoomSr"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/chkFontSize"
+        android:gravity="center"
+        android:background="@drawable/check_in_item_row_background"/>
+    <TextView
+        android:id="@+id/availableRoomType"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/chkFontSize"
+        android:gravity="center"
+        android:background="@drawable/check_in_item_row_background"/>
+    <TextView
+        android:id="@+id/availableRoomRoom"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/chkFontSize"
+        android:gravity="center"
+        android:background="@drawable/check_in_item_row_background"/>
+    <TextView
+        android:id="@+id/availableRoomBedType"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/chkFontSize"
+        android:gravity="center"
+        android:background="@drawable/check_in_item_row_background"/>
+    <TextView
+        android:id="@+id/availableRoomCharges"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/chkFontSize"
+        android:gravity="center"
+        android:background="@drawable/check_in_item_row_background" />
+    <TextView
+        android:id="@+id/availableRoomAmount"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/chkFontSize"
+        android:gravity="center"
+        android:background="@drawable/check_in_item_row_background"/>
+    <TextView
+        android:id="@+id/availableRoomExtra"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/chkFontSize"
+        android:gravity="center"
+        android:background="@drawable/check_in_item_row_background"/>
+    <TextView
+        android:id="@+id/availableRoomBalance"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/chkFontSize"
+        android:gravity="center"
+        android:background="@drawable/check_in_item_row_background"/>
+
+</LinearLayout>

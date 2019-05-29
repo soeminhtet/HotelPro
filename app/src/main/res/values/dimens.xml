@@ -1,0 +1,26 @@
+<resources>
+    <!--<dimen name="tab_height">40dp</dimen>
+    <dimen name="tab_padding">10dp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="text_default">17sp</dimen>
+    <dimen name="list_item_height">30dp</dimen>
+-->
+    <dimen name="chkTitleFontSize">17dp</dimen>
+    <dimen name="chkFontSize">15dp</dimen>
+
+    <dimen name="avSr">40dp</dimen>
+    <dimen name="avRoomType">120dp</dimen>
+    <dimen name="avRoom">70dp</dimen>
+    <dimen name="avBedType">90dp</dimen>
+    <dimen name="avCharges">100dp</dimen>
+    <dimen name="avNight">100dp</dimen>
+    <dimen name="avAmount">100dp</dimen>
+    <dimen name="avExtra">50dp</dimen>
+    <dimen name="avServAmt">100dp</dimen>
+    <dimen name="avBalance">100dp</dimen>
+    <dimen name="avCheckIn">100dp</dimen>
+    <dimen name="avCheckOut">100dp</dimen>
+    <dimen name="avTime">100dp</dimen>
+    <dimen name="avStatus">100dp</dimen>
+
+</resources>
