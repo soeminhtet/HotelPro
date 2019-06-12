@@ -4,22 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.Toast;
-
 import com.galaxy.hotelpro.Adapter.ReservationAdapter;
 import com.galaxy.hotelpro.MainActivity;
 import com.galaxy.hotelpro.R;
+import com.galaxy.hotelpro.Utility.FullScreen;
 import com.nicolettilu.hiddensearchwithrecyclerview.HiddenSearchWithRecyclerView;
-import com.ramotion.foldingcell.FoldingCell;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,27 +22,20 @@ public class ReservationActivity extends AppCompatActivity implements Reservatio
     RecyclerView recyclerView;
     ReservationAdapter reservationAdapter;
     List<String> list;
-    FoldingCell fc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        FullScreen.getFullScreen(this);
 
         setContentView(R.layout.activity_reservation);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.reservation_toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Reservation");
+        FullScreen.getToolbar(ReservationActivity.this,R.id.reservation_toolbar,"Reservation");
 
         Initialization();
 
-
-        ReservationAdapter reservationAdapter=new ReservationAdapter(ReservationActivity.this,list,this);
+        reservationAdapter=new ReservationAdapter(ReservationActivity.this,list,this);
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(reservationAdapter);

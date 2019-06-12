@@ -58,6 +58,7 @@
             android:weightSum="7">
 
             <io.armcha.elasticview.ElasticView
+                android:id="@+id/floorType_Main"
                 android:layout_weight="2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -104,6 +105,7 @@
             </io.armcha.elasticview.ElasticView>
 
             <io.armcha.elasticview.ElasticView
+                android:id="@+id/houseKeeping_Main"
                 android:layout_weight="2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -150,6 +152,7 @@
             </io.armcha.elasticview.ElasticView>
 
             <io.armcha.elasticview.ElasticView
+                android:id="@+id/roomType_Main"
                 android:layout_weight="2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -206,6 +209,7 @@
             android:layout_weight="1">
 
             <io.armcha.elasticview.ElasticView
+                android:id="@+id/lostAndFound_Main"
                 android:layout_weight="2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -252,6 +256,7 @@
             </io.armcha.elasticview.ElasticView>
 
             <io.armcha.elasticview.ElasticView
+                android:id="@+id/checkIn_Main"
                 android:layout_weight="2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -299,6 +304,7 @@
             </io.armcha.elasticview.ElasticView>
 
             <io.armcha.elasticview.ElasticView
+                android:id="@+id/reservation_Main"
                 android:layout_weight="2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -346,7 +352,7 @@
             </io.armcha.elasticview.ElasticView>
 
             <io.armcha.elasticview.ElasticView
-                android:id="@+id/mainExitCard"
+                android:id="@+id/exit_Main"
                 android:layout_weight="2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

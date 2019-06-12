@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.galaxy.hotelpro.Model.CheckInModel;
+import com.galaxy.hotelpro.Model.AvailableRoomsModel;
 import com.galaxy.hotelpro.R;
 
 import java.util.ArrayList;
@@ -16,10 +16,10 @@ import java.util.List;
 
 public class CheckInRecyclerViewAdapter extends RecyclerView.Adapter {
 
-    List<CheckInModel> list=new ArrayList<>();
+    List<AvailableRoomsModel> list=new ArrayList<>();
     Context context;
 
-    public CheckInRecyclerViewAdapter(Context context, List<CheckInModel> list){
+    public CheckInRecyclerViewAdapter(Context context, List<AvailableRoomsModel> list){
         this.context=context;
         this.list=list;
     }
@@ -56,9 +56,11 @@ public class CheckInRecyclerViewAdapter extends RecyclerView.Adapter {
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         RowViewHolder rowViewHolder = (RowViewHolder) holder;
 
-        rowViewHolder.txtSr.setText(list.get(position).getSr().toString());
+        if (!list.get(position).getRoomType().trim().equals("")){
+            rowViewHolder.txtSr.setText(String.valueOf(position+1));
+        }
         rowViewHolder.txtRoomType.setText(list.get(position).getRoomType().toString());
-        rowViewHolder.txtRoom.setText(list.get(position).getRoom().toString());
+        rowViewHolder.txtRoom.setText(list.get(position).getRoomCode().toString());
         rowViewHolder.txtBedType.setText(list.get(position).getBedType().toString());
         rowViewHolder.txtCharges.setText(list.get(position).getCharges().toString());
         rowViewHolder.txtAmount.setText(list.get(position).getAmount().toString());

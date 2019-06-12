@@ -2,15 +2,13 @@ package com.galaxy.hotelpro.Model;
 
 import java.io.Serializable;
 
-public class CheckInModel implements Serializable {
+public class AvailableRoomsModel implements Serializable {
 
-    String Sr,RoomType,Room,BedType,Charges,Amount,Extra,Balance;
+    String Sr,RoomType,Room,BedType,Charges,Amount,Extra,Balance,RoomCode;
 
-    public CheckInModel(){}
+    public AvailableRoomsModel(){}
 
-    public CheckInModel(String sr, String roomType,
-                                String room, String bedType, String charges,
-                                String amount, String extra, String balance) {
+    public AvailableRoomsModel(String sr, String roomType, String room, String bedType, String charges, String amount, String extra, String balance, String roomCode) {
         Sr = sr;
         RoomType = roomType;
         Room = room;
@@ -19,6 +17,7 @@ public class CheckInModel implements Serializable {
         Amount = amount;
         Extra = extra;
         Balance = balance;
+        RoomCode = roomCode;
     }
 
     public String getSr() {
@@ -83,5 +82,13 @@ public class CheckInModel implements Serializable {
 
     public void setBalance(String balance) {
         Balance = balance;
+    }
+
+    public String getRoomCode() {
+        return RoomCode;
+    }
+
+    public void setRoomCode(String roomCode) {
+        RoomCode = roomCode;
     }
 }

@@ -35,4 +35,9 @@ dependencies {
     implementation 'com.nicolettilu:hiddensearchwithrecyclerview:0.0.4'
 
     implementation 'com.github.armcha:ElasticView:0.1.0'
+
+    implementation 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    implementation 'com.scottyab:secure-preferences-lib:0.1.4'
+    implementation 'com.google.code.gson:gson:2.8.0'
+
 }

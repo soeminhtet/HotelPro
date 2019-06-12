@@ -8,7 +8,7 @@
     tools:context=".Activity.AvailableRoomsActivity">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/app_toolbar"
+        android:id="@+id/availableRoom_Toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
@@ -23,6 +23,6 @@
         android:numColumns="4"
         android:stretchMode="columnWidth"
         android:layout_marginTop="5dp"
-        android:layout_below="@+id/app_toolbar"/>
+        android:layout_below="@+id/availableRoom_Toolbar"/>
 
 </RelativeLayout>

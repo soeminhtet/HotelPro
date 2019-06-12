@@ -8,7 +8,7 @@
     tools:context=".Activity.CheckInActivity">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/app_toolbar"
+        android:id="@+id/checkIn_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_alignParentStart="true"
@@ -20,7 +20,7 @@
 
     <LinearLayout
         android:layout_marginTop="5dp"
-        android:layout_below="@+id/app_toolbar"
+        android:layout_below="@+id/checkIn_toolbar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:weightSum="10"
@@ -195,7 +195,8 @@
                         android:id="@+id/briefReport"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:stretchColumns="4">
+                        android:stretchColumns="4"
+                        android:layout_gravity="center_vertical">
 
                         <TableRow>
 
@@ -212,7 +213,7 @@
                                 android:text=":" />
 
                             <TextView
-                                android:id="@+id/totalAmount"
+                                android:id="@+id/totalAmount_CheckIn"
                                 android:layout_gravity="right"
                                 android:layout_span="3"
                                 android:padding="10dip"
@@ -226,6 +227,7 @@
                                 android:text=" " />
 
                             <TextView
+                                android:id="@+id/discountPercent_CheckIn"
                                 android:padding="3dip"
                                 android:text="Discount" />
 
@@ -234,11 +236,12 @@
                                 android:text=":" />
 
                             <TextView
-                                android:id="@+id/totalDiscount"
+                                android:id="@+id/totalDiscount_CheckIn"
                                 android:layout_gravity="right"
+                                android:gravity="right"
                                 android:layout_span="3"
                                 android:padding="10dip"
-                                android:text="0" />
+                                android:text="0.0" />
                         </TableRow>
 
                         <TableRow>
@@ -248,6 +251,7 @@
                                 android:text=" " />
 
                             <TextView
+                                android:id="@+id/taxPercent_CheckIn"
                                 android:padding="3dip"
                                 android:text="Tax" />
 
@@ -256,8 +260,9 @@
                                 android:text=":" />
 
                             <TextView
-                                android:id="@+id/totalTax"
+                                android:id="@+id/totalTax_CheckIn"
                                 android:layout_gravity="right"
+                                android:gravity="right"
                                 android:layout_span="3"
                                 android:padding="10dip"
                                 android:text="100" />
@@ -282,8 +287,9 @@
                                 android:text=":" />
 
                             <TextView
-                                android:id="@+id/totalNetAmount"
+                                android:id="@+id/totalNetAmount_CheckIn"
                                 android:layout_gravity="right"
+                                android:gravity="right"
                                 android:layout_span="3"
                                 android:padding="10dip"
                                 android:text="10100" />

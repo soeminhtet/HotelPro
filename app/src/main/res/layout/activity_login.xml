@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginLayout"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,22 +18,22 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@+id/lWifi"
+            android:layout_toLeftOf="@+id/wifiImg_Login"
             android:layout_marginRight="20dp"
             android:text="SVR.Status"
             android:padding="7dp"/>
 
         <ImageView
-            android:id="@+id/lWifi"
-            android:layout_toLeftOf="@+id/lSetting"
+            android:id="@+id/wifiImg_Login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_signal_wifi_off"
             android:layout_marginRight="20dp"
-            android:paddingTop="5dp"/>
+            android:layout_toLeftOf="@+id/settingImg_Login"
+            android:paddingTop="5dp"
+            android:src="@drawable/ic_signal_wifi_off" />
 
         <ImageView
-            android:id="@+id/lSetting"
+            android:id="@+id/settingImg_Login"
             android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -65,15 +67,17 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp">
 
-                <EditText
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
                     android:id="@+id/etUsername"
+                    android:hint="Username"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
-                    android:drawableTint="#5fb0c9"
-                    android:hint="Username"
                     android:inputType="text"
                     android:singleLine="true"
-                    android:imeOptions="flagNoExtractUi"/>
+                    android:imeOptions="flagNoExtractUi"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:clickable="true"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -103,7 +107,7 @@
                 android:layout_marginTop="20dp">
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/lExitBtn"
+                    android:id="@+id/exitBtn_Login"
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
                     android:text="Exit"
@@ -114,7 +118,7 @@
                     app:cornerRadius="10dp"/>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/loginBtn"
+                    android:id="@+id/loginBtn_Login"
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
                     android:text="Login"

@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.galaxy.hotelpro.MainActivity;
 import com.galaxy.hotelpro.R;
+import com.galaxy.hotelpro.Utility.FullScreen;
 
 public class CheckInVoucherActivity extends AppCompatActivity {
 
@@ -23,16 +24,11 @@ public class CheckInVoucherActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        FullScreen.getFullScreen(this);
 
         setContentView(R.layout.activity_check_in_voucher);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.app_toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Check In Voucher");
+        FullScreen.getToolbar(CheckInVoucherActivity.this,R.id.checkInVoucher_toolbar,"Check In Voucher");
 
         Initialization();
 
